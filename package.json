@@ -1,0 +1,14 @@
+{
+  "name": "team-step-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n server,client -c cyan,magenta \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "build": "npm install --prefix server && npm install --prefix client && npm run build --prefix client",
+    "start": "NODE_ENV=production node server/index.js",
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

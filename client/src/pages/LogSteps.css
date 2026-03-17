@@ -1,0 +1,79 @@
+.log-steps {
+  max-width: 900px;
+}
+
+.log-grid {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+@media (max-width: 700px) {
+  .log-grid { grid-template-columns: 1fr; }
+}
+
+.log-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.log-submit {
+  width: 100%;
+  justify-content: center;
+  padding: 0.625rem;
+  font-size: 0.9rem;
+}
+
+.log-status {
+  padding: 0.625rem 0.875rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
+.log-status--success {
+  background: var(--success-light);
+  color: #065f46;
+}
+
+.log-status--error {
+  background: var(--danger-light);
+  color: #991b1b;
+}
+
+/* History table */
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.history-table th {
+  text-align: left;
+  padding: 0.5rem 0.5rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border);
+}
+
+.history-table td {
+  padding: 0.625rem 0.5rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+
+.history-table tr:last-child td {
+  border-bottom: none;
+}
+
+.history-table .text-right { text-align: right; }
+.history-table .text-muted { color: var(--text-muted); font-size: 0.8rem; }
+
+.steps-goal {
+  color: var(--success);
+  font-weight: 600;
+}

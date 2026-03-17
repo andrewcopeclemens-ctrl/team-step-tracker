@@ -1,0 +1,23 @@
+.trends {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.trends-card {
+  /* inherits .card */
+}
+
+.chart-wrap {
+  position: relative;
+}
+
+.chart-wrap--line {
+  height: 320px;
+}
+
+/* bar height is set inline based on member count */
+.chart-wrap--bar {
+  min-height: 200px;
+}
